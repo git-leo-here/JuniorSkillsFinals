@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Navbar starts -->
+		<nav>
+			<div class="navbar">
+				<img
+					src="./images/logo/logo_transparent.png"
+					class="lead"
+					alt="OSDA"
+					srcset=""
+				/>
+
+				<ul class="menu">
+					<li class="menu-item">
+						<a class="nav-link" href="#">
+							Home
+							<!-- <span> &#x25BC; </span> -->
+						</a>
+						<!-- <ul class="sub-menu">
+                        <li><a class='nav-link' href=""> Class 11 </a></li>
+                        <li><a class='nav-link' href=""> Class 12 </a></li>
+                    </ul> -->
+					</li>
+					<li class="menu-item">
+						<a class="nav-link" href="#about">
+							About Competitions
+						</a>
+					</li>
+					<li class="menu-item">
+						<a class="nav-link" href="#register">Register</a>
+					</li>
+					<li class="menu-item">
+						<a class="nav-link" href="#gallery">Gallery</a>
+					</li>
+					<li class="menu-item">
+						<a class="nav-link" href="#contact">Contact Us</a>
+					</li>
+					<li class="menu-item btn show-modal">
+						<!-- <a class="nav-btn " href="#"> -->
+						Time Left
+						<!-- </a> -->
+					</li>
+				</ul>
+
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</nav>
+
+		<nav class="mobile-nav">
+			<ul class="mobile-menu">
+				<li class="menu-item is-active">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="menu-item">
+					<a class="nav-link" href="#">About Competitions</a>
+				</li>
+				<li class="menu-item">
+					<a class="nav-link" href="#">Register</a>
+				</li>
+				<li class="menu-item">
+					<a class="nav-link" href="#gallery">Gallery</a>
+				</li>
+				<li class="menu-item">
+					<a class="nav-link" href="#">Contact Us</a>
+				</li>
+				<li class="menu-item btn show-modal">
+					<a class="nav-btn" href="#">Time left</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Navbar Ends -->
+
+		<!--Popup Starts-->
+		<div class="modal hidden">
+			<button class="close-modal">&times;</button>
+			<h2 class="page-title">Time left for OSDA 2022</h2>
+			<p class="para">Check out how much longer until OSDA starts !</p>
+			<div class="countdown">00 : 00 : 00</div>
+		</div>
+		<div class="overlay hidden"></div>
+		<!-- Popup End -->
+
+		<!-- Content Starts -->
+
+		<main class="main">
+			<section class="pages">
+				<div class="page is-active" data-page="1">
+					<div class="slider">
+						<div class="slider__btns">
+							<div class="slider__btn" id="prev"><</div>
+							<div class="slider__btn" id="next">></div>
+						</div>
+					</div>
+
+					<!-- <h2 class="page-title  ">Home</h2> -->
+					<!-- <p class="para anim fade-up">Welcome to the home of Mridang 2021 </p> -->
+					<article id="about" class="page-section anim fade-up">
+						<h2 class="page-title">About Competitions</h2>
+						<p class="para">
+							Founded in 1950, WorldSkills is the global hub for
+							skills excellence and development. WorldSkills
+							brings youth, industries, and educators together to
+							give youth the chance to compete, experience, and
+							learn how to become the best in their skill of
+							choice. From the traditional trades to multi-skilled
+							technology careers in the industry and service
+							sectors, supported by partners, industries,
+							governments, volunteers, and educational
+							institutions, WorldSkills vision is to improve the
+							world through the power of skills. It has 75 Member
+							countries and regions,all working with youth,
+							educators, governments, and industries to help
+							prepare the workforce and talent of today for the
+							jobs of the future.
+						</p>
+						<p class="para">
+							WorldSkills India is an initiative of the National
+							Skill Development Corporation (NSDC) under the
+							Ministry of Skill Development and Entrepreneurship,
+							Government of India. NSDC, through its WorldSkills
+							India initiative, has been leading the country's
+							participation at WorldSkills International
+							competitions since 2011.
+						</p>
+						<p class="para">
+							The key objectives of WorldSkills India are to:<br />
+							Promulgate skills in society to motivate the youth
+							to pursue vocational education.<br />
+							Champion skills and learning for work through local,
+							regional, national and international skills
+							competitions.<br />
+							Create partnership network comprising of government,
+							industry, academic partners, VET institutions, trade
+							associations and youth to promote skills. <br />
+							Establish long-term association with WorldSkills
+							International and other WorldSkills member
+							countries. <br />
+						</p>
+						<p class="para">
+							INDIASKILLS Ministry of Skill Development and
+							Entrepreneurship (MSDE) & National Skill Development
+							Corporation (NSDC) launched India’s first National
+							Skills Competition- IndiaSkills, a biennial
+							competition.
+						</p>
+					</article>
+
+					<hr />
+					<article id="register" class="page-section anim fade-up">
+						<h2 class="page-title">Register</h2>
+						<div class="container">
+							<div class="title">Registration</div>
+							<div class="content">
+								<form id="form" action="#">
+									<div class="user-details">
+										<div class="input-box">
+											<span class="details"
+												>Full Name</span
+											>
+											<input
+												type="text"
+												placeholder="Enter your name"
+												required
+											/>
+										</div>
+										<div class="input-box">
+											<span class="details"
+												>Username</span
+											>
+											<input
+												type="date"
+												placeholder="Enter your date of birth"
+												required
+											/>
+										</div>
+										<div class="input-box">
+											<span class="details">Email</span>
+											<input
+												type="text"
+												placeholder="Enter your email"
+												required
+											/>
+										</div>
+										<div class="input-box">
+											<span class="details"
+												>Phone Number</span
+											>
+											<input
+												type="number"
+												id="phone"
+												placeholder="Enter your phone number"
+												required
+											/>
+											<small style="color: red"></small>
+											<!-- <small
+												>Enter a valid 10 digit phone
+												number</small
+											> -->
+										</div>
+
+										<div
+											class="input-box"
+											style="width: 100%"
+										>
+											<span class="details">Skill</span>
+											<input
+												type="text"
+												list="skills"
+												name="skill"
+												id="skill"
+												placeholder="Select your desired skill"
+												required
+											/>
+											<datalist id="skills">
+												<option
+													value="3D Digital Game Art"
+												></option>
+												<option
+													value="Fashion Technology"
+												></option>
+												<option
+													value="Cloud Computing"
+												></option>
+												<option
+													value="Mobile Robotics"
+												></option>
+												<option
+													value="Web Technologies"
+												></option>
+												<option
+													value="Mechatronics"
+												></option>
+											</datalist>
+										</div>
+									</div>
+									<div class="gender-details">
+										<input
+											type="radio"
+											name="gender"
+											id="dot-1"
+										/>
+										<input
+											type="radio"
+											name="gender"
+											id="dot-2"
+										/>
+										<input
+											type="radio"
+											name="gender"
+											id="dot-3"
+										/>
+										<span class="gender-title">Gender</span>
+										<div class="category">
+											<label for="dot-1">
+												<span class="dot one"></span>
+												<span class="gender">Male</span>
+											</label>
+											<label for="dot-2">
+												<span class="dot two"></span>
+												<span class="gender"
+													>Female</span
+												>
+											</label>
+											<label for="dot-3">
+												<span class="dot three"></span>
+												<span class="gender"
+													>Prefer not to say</span
+												>
+											</label>
+										</div>
+									</div>
+									<div class="button" id="submit-btn">
+										<input type="submit" value="Register" />
+									</div>
+								</form>
+							</div>
+						</div>
+					</article>
+					<hr />
+					<article id="gallery" class="page-section anim fade-up">
+						<h2 class="page-title">Gallery</h2>
+
+						<!-- <p>Cultural Events</p> -->
+						<section class="image-grid">
+							<img src="./images/gallery/1.jpg" alt="" />
+							<img src="./images/gallery/2.jpg" alt="" />
+							<img src="./images/gallery/3.jpg" alt="" />
+							<img src="./images/gallery/4.jpg" alt="" />
+							<img src="./images/gallery/5.jpg" alt="" />
+							<img src="./images/gallery/6.jpg" alt="" />
+							<img src="./images/gallery/7.jpg" alt="" />
+							<img src="./images/gallery/8.jpg" alt="" />
+							<img src="./images/gallery/9.jpg" alt="" />
+							<img src="./images/gallery/10.jpg" alt="" />
+							<img src="./images/gallery/11.jpg" alt="" />
+							<img src="./images/gallery/12.jpg" alt="" />
+						</section>
+					</article>
+
+					<hr />
+
+					<article
+						id="competitions"
+						class="page-section anim fade-up"
+					>
+						<h2 class="page-title">Competitions</h2>
+						<div class="table-container anim fade-up">
+							<table>
+								<tr id="header">
+									<th>Name</th>
+									<th>Date</th>
+									<th>Time</th>
+								</tr>
+								<tr>
+									<td>3D Digital Game Art</td>
+									<td>29th august,2021</td>
+									<td>1:00 P.M.</td>
+								</tr>
+								<tr>
+									<td>Fashion Technology</td>
+									<td>29th august,2021</td>
+									<td>1:00 P.M.</td>
+								</tr>
+								<tr>
+									<td>Cloud Computing</td>
+									<td>29th august,2021</td>
+									<td>10:00 A.M.</td>
+								</tr>
+								<tr>
+									<td>Mobile Robotics</td>
+									<td>29th august,2021</td>
+									<td>10:00 A.M.</td>
+								</tr>
+								<tr>
+									<td>Web Technologies</td>
+									<td>30th august,2021</td>
+									<td>10:00 A.M.</td>
+								</tr>
+								<tr>
+									<td>Mechatronics</td>
+									<td>30th august,2021</td>
+									<td>10:00 A.M.</td>
+								</tr>
+							</table>
+						</div>
+					</article>
+
+					<hr />
+				</div>
+			</section>
+		</main>
+		<!-- Content Ends -->
+
+		<!-- Footer starts -->
+		<footer>
+			<div class="footer-content" id="contact">
+				<h3 class="lead anim fade-left">Contact Us</h3>
+				<p class="para anim fade-up">
+					Phone; 91-9888888888 Address: 77/3/1 , Civil Lines , Vijay
+					Nagar ,<br />
+					Near Vijay Chowk , Pune , Maharashtra , India
+				</p>
+				<ul class="socials">
+					<li>
+						<img
+							src="./images/social-media-icons/facebook.png"
+							alt="fb"
+							width="20"
+						/>
+					</li>
+					<li>
+						<img
+							src="./images/social-media-icons/linkedin1.png"
+							alt="linkedin"
+							width="20"
+						/>
+					</li>
+					<li>
+						<img
+							src="./images/social-media-icons/youtube.png"
+							alt="yt"
+							width="20"
+						/>
+					</li>
+					<li>
+						<img
+							src="./images/social-media-icons/twitter.png"
+							alt="twitter"
+							width="20"
+						/>
+					</li>
+					<li>
+						<a href="#"><i class="fa fa-linkedin-square"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<p>
+					Copyright &#169; 2021 <a href="#">OSDA Ltd. </a>
+					All rights reserved
+				</p>
+			</div>
+		</footer>
+		<!-- Footer ends -->
+
+		<script src="script.js"></script>
+	</body>
+</html>
